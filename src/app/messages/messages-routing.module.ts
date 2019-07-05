@@ -8,7 +8,7 @@ const routes: Routes = [
     component: MessageListComponent
   },
   {
-    path:'',
+    path:'new',
     component: MessageNewComponent
   }
 ];
