@@ -11,12 +11,16 @@ import { CustomerNewComponent } from './customer-new/customer-new.component';
 //Material
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 import{MatIconModule} from '@angular/material/icon';
 import{MatInputModule} from '@angular/material/input';
+import{MatRadioModule} from '@angular/material/radio';
+import { RepDialogComponent } from './rep-dialog/rep-dialog.component';
 
 
 @NgModule({
-  declarations: [CustomerListComponent, CustomerCardComponent, CustomerNewComponent],
+  declarations: [CustomerListComponent, CustomerCardComponent, CustomerNewComponent, RepDialogComponent],
+  entryComponents:[RepDialogComponent],
   imports: [
     CommonModule,
     CustomersRoutingModule,
@@ -26,8 +30,10 @@ import{MatInputModule} from '@angular/material/input';
     //Material
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatRadioModule
   ]
 })
 export class CustomersModule { }
