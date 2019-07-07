@@ -1,6 +1,6 @@
 <mat-tab-group>
     <mat-tab label="Orders">
-        <ng-template matTabContent>
+       
             <div class="order-actions">
                 <button mat-button color="primary">DELETE</button>
                 <button mat-button color="primary">ARCHIVE</button>
@@ -56,7 +56,15 @@
 
                 </table>
             </div>
-        </ng-template>
+        
+
+        <mat-paginator
+            [length] = "length"
+            [pageSize]= "pageSize"
+            [pageSizeOptions] ="pageSizeOptions"
+            (page)="onPageChange($event)"
+        ></mat-paginator>
+
     </mat-tab>
     <mat-tab label="Shipments">
         <ng-template matTabContent>
