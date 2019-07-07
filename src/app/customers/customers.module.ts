@@ -16,6 +16,7 @@ import{MatIconModule} from '@angular/material/icon';
 import{MatInputModule} from '@angular/material/input';
 import{MatRadioModule} from '@angular/material/radio';
 import { RepDialogComponent } from './rep-dialog/rep-dialog.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { RepDialogComponent } from './rep-dialog/rep-dialog.component';
     MatDialogModule,
     MatIconModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSnackBarModule
   ]
 })
 export class CustomersModule { }
